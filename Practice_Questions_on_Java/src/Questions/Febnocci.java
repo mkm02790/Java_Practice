@@ -1,19 +1,21 @@
 package Questions;
 
+import java.util.Arrays;
+
 public class Febnocci {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {	
+	int[] arr1 =febnocci2(5);
+	System.out.println(Arrays.toString(arr1));
 	
-		
-	int n1 = 0,n2 = 1,n3,count=10,i;
-	System.out.println(n1);
-	
-	for(i=2 ;i<count;i++) {
-		n3 =n1+n2;
-		System.out.println(n3);
-		n1=n2;
-		n2=n3;
-		
-		
+}
+public static int[] febnocci2(int num){
+	int[] arr = new int[num];
+	 arr[0]=0;
+	 arr[1]=1;
+	for(int i=2;i<num ;i++) {
+		arr[i]=arr[i-1] +arr[i-2];		
 	}
-}}
+return arr;
+}
+}

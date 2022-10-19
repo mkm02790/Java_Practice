@@ -20,15 +20,21 @@ public class ReverseaString {
 	 */
 	}
 static String reverse(String st) {
+	
+	/*
+	 * String str =st; String rev = ""; int strln=str.length(); while(strln>0) {
+	 * rev=rev+ str.charAt(strln-1); strln--; }
+	 */
+	  
 	String str =st;
-	String rev = "";
-	int strln=str.length();
+	String rev= "";
+	int strln= str.length();
 	while(strln>0) {
-		rev=rev+ str.charAt(strln-1);
+		rev =rev +str.charAt(strln-1);
 		strln--;
 	}
-	
-	return rev;
+	  return rev;
+	 
 }
 	
 static String reverseStringUsingStack(String str) {
