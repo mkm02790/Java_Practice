@@ -1,11 +1,17 @@
 package Questions;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 import java.util.PriorityQueue;
 
 public class kthLargestandkthsmallest {
 	public static int k  =3;
 	public static int arr[] = {1,2,3,4,5,6,7,9,8,10,11,12,13,14,15,16,17,18};		
+	List<Integer> al = new ArrayList<Integer>();
+	 
+	 
 	public static void main(String[] args) {
 		
 		
@@ -54,6 +60,11 @@ public class kthLargestandkthsmallest {
 			
 		}
 		return pqmax.peek();
+	}
+	private static int StreamWay() {
+		int obj =0;
+		
+		return obj;
 	}
 }
 	
