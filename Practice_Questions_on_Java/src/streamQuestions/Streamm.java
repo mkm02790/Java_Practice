@@ -1,4 +1,4 @@
-package Questions;
+package streamQuestions;
 
 import java.util.ArrayList;
 import java.util.Arrays;

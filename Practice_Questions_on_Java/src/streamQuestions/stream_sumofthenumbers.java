@@ -1,4 +1,4 @@
-package Questions;
+package streamQuestions;
 
 import java.util.Arrays;
 import java.util.List;
