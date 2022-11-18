@@ -17,7 +17,7 @@ public class NumberOfOccurenceOfaNumber {
 		int count =1;
 		for (Integer it : arr) {
 			if(!hm.containsKey(it)) {
-				hm.put(it,count);
+				hm.put(it,1);
 			}else {
 				count = hm.get(it)+1;
 				hm.put(it, count);
