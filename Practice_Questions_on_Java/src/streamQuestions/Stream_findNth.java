@@ -16,13 +16,9 @@ public class Stream_findNth {
 	      s1.add(new Students("mno" ,105 ,76,"RJ")); 
 	      s1.add(new Students("pqr" ,106 ,75,"TL")); 
 	      s1.add(new Students("stu" ,107 ,34,"AP"));
-	      s1.add(new Students("vwx" ,108 ,41,"WB"));
+	      s1.add(new Students("vwx" ,108 ,41,"WB"));	  
 	  
-	  
-	  
-	  
-	   	  
-	   Integer hm=  s1.stream().map((e) -> e.getMarks()).max(Double ::compare).get();
+	   Integer hm=  s1.stream().map((e) -> e.getMarks()).max(Integer ::compare).get();
 	   System.out.println( " " +hm);
 	   
 	   
@@ -30,7 +26,7 @@ public class Stream_findNth {
 	  
 	  } 
 	  
-} class Students{
+} class Students{ 
 	 
 String name ;
 int rollno;

@@ -1,4 +1,4 @@
-package Questions;
+package streamQuestions;
 import java.util.*;
 import java.util.stream.Collectors;  
 class Product{  
