@@ -1,4 +1,4 @@
-package Questions;
+package sorting;
 
 public class Heapp {
 
