@@ -11,14 +11,7 @@ public class BuilderDesignPattern {
 
 class Mobile{
 	
-	@Override
-	public String toString() {
-		return "Mobile [ram=" + ram + ", battry=" + battry + ", name=" + name + ", colour=" + colour + "]";
-	}
-	int ram;
-	int battry ;
-	String name;
-	String colour ;
+	
 	
 	
 	public int getRam() {
@@ -45,6 +38,14 @@ class Mobile{
 		
 		
 	}
+	@Override
+	public String toString() {
+		return "Mobile [ram=" + ram + ", battry=" + battry + ", name=" + name + ", colour=" + colour + "]";
+	}
+	int ram;
+	int battry ;
+	String name;
+	String colour ;
 	public static class  MobileBuilder {
 		int ram;
 		int battry ;

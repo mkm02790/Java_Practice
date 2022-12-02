@@ -1,6 +1,7 @@
 package streamQuestions;
 import java.util.*;
-import java.util.stream.Collectors;  
+import java.util.stream.Collectors;
+import java.util.stream.Stream;  
 class Product{  
     int id;  
     String name;  
@@ -19,23 +20,29 @@ public class JavaStreamExample {
     public static void main(String[] args) {  
         List<Product> productsList = new ArrayList<Product>();  
         //Adding Products  
-        productsList.add(new Product(1,"HP Laptop",25000f));  
-        productsList.add(new Product(2,"Dell Laptop",30000f));  
-        productsList.add(new Product(3,"Lenevo Laptop",28000f));  
-        productsList.add(new Product(4,"Sony Laptop",28000f));  
-        productsList.add(new Product(5,"Apple Laptop",90000f));
-        productsList.add(new Product(6,"Asus Laptop",870f));
         productsList.add(new Product(7,"Realme Laptop",94500f));
         productsList.add(new Product(8,"Mi Laptop",9050f));
         productsList.add(new Product(9,"Redmi Laptop",6556f));
         productsList.add(new Product(10,"Xiomi Laptop",9300f));
+        productsList.add(new Product(2,"Dell Laptop",30000f));  
+        productsList.add(new Product(3,"Lenevo Laptop",28000f));  
+        productsList.add(new Product(4,"Sony Laptop",28000f));  
+      
         productsList.add(new Product(11,"vostro Laptop",32000f));
         productsList.add(new Product(12,"samsung Laptop",900232f));
+        productsList.add(new Product(1,"HP Laptop",25000f));  
+        productsList.add(new Product(5,"Apple Laptop",90000f));
+        productsList.add(new Product(6,"Asus Laptop",870f));
+     
        
         
-        // All Laptop name at one place
-       List<Product> laptop_Name ;
-       productsList.stream().filter((p) -> p.name.startsWith("R")).forEach(System.out::println);
+       productsList.sort(Comparator.comparing((p) -> p.id));
+       Product product=    productsList.stream().skip(productsList.size()-1).findFirst().get();
+      String str= product.name;
+       System.out.println(str);
+       
+       
+//       productsList.stream().filter((p) -> p.name.startsWith("R")).forEach(System.out::println);
         
 		/*
 		 * Float totalPrice = productsList.stream() .map(product->product.price)
