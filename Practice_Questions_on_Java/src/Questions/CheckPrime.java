@@ -6,7 +6,7 @@ public class CheckPrime {
 
 	public static void main(String[] args) {
 	Scanner sc = new Scanner(System.in);
-		int num = sc.nextInt();
+		var num = sc.nextInt();
 		
 	  
 		int n1=0;

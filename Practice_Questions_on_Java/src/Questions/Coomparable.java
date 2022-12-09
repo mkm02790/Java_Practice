@@ -33,7 +33,7 @@ public class Coomparable {
 	}
 
 }
-class Student implements Comparable<Student> {
+ class Student implements Comparable<Student> {
 	private String name;
 	private Integer id;
 	private String subject;

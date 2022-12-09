@@ -1,4 +1,4 @@
-package Questions;
+package DesignPatterns;
 
 public class Singleton_Class {
 
